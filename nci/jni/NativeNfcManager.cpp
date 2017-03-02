@@ -326,7 +326,7 @@ static void nfcManager_doSetScreenState(JNIEnv* e, jobject o, jint state);
 static void nfcManager_doSetScreenOrPowerState (JNIEnv* e, jobject o, jint state);
 static void StoreScreenState(int state);
 int getScreenState();
-#if(NFC_NXP_ESE == TRUE && (NFC_NXP_CHIP_TYPE != PN547C2))
+#if(NFC_NXP_ESE == TRUE)
 bool isp2pActivated();
 #endif
 static void nfaConnectionCallback (UINT8 event, tNFA_CONN_EVT_DATA *eventData);
@@ -5518,7 +5518,7 @@ int getScreenState()
     return screenstate;
 }
 
-#if(NFC_NXP_ESE == TRUE && (NFC_NXP_CHIP_TYPE != PN547C2))
+#if(NFC_NXP_ESE == TRUE)
 /*******************************************************************************
 **
 ** Function:        isp2pActivated

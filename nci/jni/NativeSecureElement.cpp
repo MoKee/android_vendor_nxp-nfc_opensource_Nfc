@@ -62,7 +62,7 @@ static const int EE_ERROR_IO = -1;
 //static const int EE_ERROR_ALREADY_OPEN = -2;
 static const int EE_ERROR_INIT = -3;
 static const int EE_ERROR_LISTEN_MODE = -4;
-//static const int EE_ERROR_EXT_FIELD = -5;
+static const int EE_ERROR_EXT_FIELD = -5;
 //static const int EE_ERROR_NFC_DISABLED = -6;
 bool is_wired_mode_open = false;
 /*******************************************************************************

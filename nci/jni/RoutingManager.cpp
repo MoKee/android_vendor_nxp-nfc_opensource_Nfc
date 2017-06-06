@@ -2140,7 +2140,7 @@ void RoutingManager::stackCallback (UINT8 event, tNFA_CONN_EVT_DATA* eventData)
     ALOGD("%s: event=0x%X", fn, event);
     RoutingManager& routingManager = RoutingManager::getInstance();
 
-#if((NFC_NXP_ESE == TRUE)&&(NXP_NFCC_ESE_UICC_CONCURRENT_ACCESS_PROTECTION == TRUE))
+#if((NFC_NXP_ESE == TRUE))
     SecureElement& se = SecureElement::getInstance();
 #endif
 
